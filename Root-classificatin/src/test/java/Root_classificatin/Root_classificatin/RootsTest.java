@@ -199,4 +199,28 @@ public class RootsTest
 		assertEquals(root_expected, Roots.root_types().toString());
 	}
 	
+	@Test
+	public void testPartion17() 
+	{
+		//(0,1,2)
+		Roots.calculate_roots(101,14,21);
+		
+		String  root_expected = Root_Types.ERROR.toString();
+		
+		
+		assertEquals(root_expected, Roots.root_types().toString());
+	}
+	
+	@Test
+	public void testPartion18() 
+	{
+		//(0,1,2)
+		Roots.calculate_roots(2,-1,5);
+		
+		String  root_expected = Root_Types.ERROR.toString();
+		
+		
+		assertEquals(root_expected, Roots.root_types().toString());
+	}
+	
 	}
